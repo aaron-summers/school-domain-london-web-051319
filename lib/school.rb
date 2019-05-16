@@ -1,6 +1,9 @@
 # code here!
+<<<<<<< HEAD
 require 'pry'
 # code here!
+=======
+>>>>>>> a94327b442f7a2ffe6ee8631af96144b2a3cc1b2
 class School
   attr_accessor :roster, :student_name, :grade
   attr_reader :name
@@ -8,6 +11,7 @@ class School
     @name = name
     @roster = Hash.new
   end
+<<<<<<< HEAD
 
   def roster
     @roster
@@ -34,3 +38,17 @@ class School
       end
     end
 end
+=======
+  
+  def roster
+    @roster
+  end
+  
+  def add_student(name, grade)
+    @student_name = name
+    @grade = grade
+    if @roster.include?(grade)
+   self.roster[grade] << name
+  end
+end
+>>>>>>> a94327b442f7a2ffe6ee8631af96144b2a3cc1b2
